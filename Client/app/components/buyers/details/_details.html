@@ -1,0 +1,16 @@
+﻿Buyer Details
+<div ng-cloak>
+    <p>Id {{buyerdetails.buyer.Id}}</p></br>
+    <p>{{buyerdetails.buyer.Name}}</p></br>
+    <p>{{buyerdetails.buyer.Address}}</p></br>
+    <p>{{buyerdetails.buyer.CreatedDate | date : format : date:'yyyy-MM-dd HH:mm'}}</p></br>
+</div>
+
+<label>Name</label>
+<input type="text" ng-model="buyerdetails.buyer.Name" />
+<label>Adress</label>
+<input type="text" ng-model="buyerdetails.buyer.Address" />
+
+<button ng-click="buyerdetails.save()" > Save</button>
+<button ng-click="buyerdetails.buyer= {}"> Reset</button>
+<a href="/">Home</a>
